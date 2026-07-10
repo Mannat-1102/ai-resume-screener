@@ -1,0 +1,19 @@
+Jane Doe
+jane.doe@email.com | 555-123-4567 | 123 Maple Street
+
+Summary
+Data analyst with 3 years of experience turning messy datasets into actionable insights.
+Comfortable across the analytics stack from SQL to dashboarding.
+
+Experience
+Data Analyst, RetailCo (2021-2024)
+- Built dashboards in Tableau to track weekly sales performance across 40 stores
+- Used Python (pandas, numpy) and SQL to clean and analyze transaction data
+- Ran A/B testing on promotional campaigns, improving conversion by 12%
+- Presented findings to stakeholders on a monthly basis
+
+Skills
+Python, SQL, Pandas, Tableau, Excel, Statistics, Data Visualization, Communication
+
+Education
+Bachelor of Science in Economics, State University, 2020

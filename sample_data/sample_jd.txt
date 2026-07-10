@@ -1,0 +1,21 @@
+Data Analyst - Growth Team
+
+We're looking for a Data Analyst with 2+ years of experience to join our growth team.
+
+Responsibilities:
+- Analyze user behavior data to identify growth opportunities
+- Build and maintain dashboards for key business metrics
+- Design and evaluate A/B tests
+- Communicate insights clearly to non-technical stakeholders
+
+Requirements:
+- 2+ years of experience in data analysis
+- Strong SQL and Python skills (pandas, numpy)
+- Experience with Tableau or Power BI
+- Familiarity with statistics and experimental design
+- Bachelor's degree in a quantitative field
+- Experience with machine learning is a plus
+
+Nice to have:
+- Familiarity with cloud platforms (AWS or GCP)
+- Experience with NLP or natural language processing projects

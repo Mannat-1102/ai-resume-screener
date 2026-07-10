@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+.env
+.streamlit/secrets.toml
+*.egg-info/
+.DS_Store
+.ipynb_checkpoints/
+
+# model cache (regenerated on first run, no need to version it)
+.cache/
