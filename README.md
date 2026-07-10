@@ -101,10 +101,80 @@ Missing skills: aws, data analysis, gcp, machine learning, nlp, power bi
 To turn this from "a tool that runs" into "a tool with a measured result" —
 the detail that stands out most on a resume — gather 20-30 resume/JD pairs,
 have 2-3 people rank them independently, and compute the correlation between
-your tool's `overall_score` and the human rankings (`scipy.stats.spearmanr`
-works well for this). Report that number.
+your tool's `overall_score` and the human rankings.
 
-## Possible extensions
+This repo includes a ready-made script for this:
+
+```bash
+cd resume_screener  # run from project root, not from scripts/
+pip install scipy
+```
+
+1. Copy `scripts/validation_data_template.csv` and fill in rows of
+   `resume_path,jd_path,human_score` — paths relative to the project root,
+   `human_score` a 0-100 rating a person gave that pair (average 2-3 raters
+   per pair if you can)
+2. Run:
+   ```bash
+   python scripts/validate.py scripts/your_validation_data.csv
+   ```
+3. It prints a Spearman correlation and a ready-to-use resume sentence, e.g.:
+   > "Achieved a Spearman correlation of 0.74 with human recruiter rankings
+   > across 24 resume-job pairs."
+
+Aim for at least ~15-20 pairs — fewer than that and the correlation number
+is too noisy to mean much.
+
+
+## Deployment (get a live link, not just a repo)
+
+This is the step that makes the project *demoable* in an interview instead of
+just readable as code.
+
+### 1. Push to GitHub first
+
+```bash
+cd resume_screener
+git remote add origin https://github.com/YOUR_USERNAME/ai-resume-screener.git
+git branch -M main
+git push -u origin main
+```
+
+### 2. Deploy the backend (Render, free tier)
+
+1. Go to [render.com](https://render.com) → New → Blueprint → connect your repo
+   (it will detect `render.yaml` automatically and configure everything)
+2. Alternatively, without the blueprint: New → Web Service → connect repo →
+   set **root directory** to `backend`, **build command** to
+   `pip install -r requirements.txt`, **start command** to
+   `uvicorn main:app --host 0.0.0.0 --port $PORT`
+3. Deploy. Note the resulting URL, e.g. `https://resume-screener-api.onrender.com`
+4. Sanity check it: visit `https://resume-screener-api.onrender.com/health` —
+   should return `{"status": "ok"}`
+
+Note: Render's free tier spins down after inactivity, so the first request
+after idle time takes ~30-50 seconds to wake up. Worth mentioning if you demo
+it live.
+
+### 3. Deploy the frontend (Streamlit Community Cloud, free)
+
+1. Go to [share.streamlit.io](https://share.streamlit.io) → New app → connect
+   your repo
+2. Set **main file path** to `frontend/app.py`
+3. Under **Advanced settings → Secrets**, add:
+   ```
+   BACKEND_URL = "https://resume-screener-api.onrender.com"
+   ```
+4. Deploy. You'll get a public URL like
+   `https://your-app-name.streamlit.app` — this is the link to put on your
+   resume/LinkedIn.
+
+You'll need to set the `BACKEND_URL` environment variable to read from
+Streamlit secrets — this is already wired up in `frontend/app.py` via
+`os.environ.get("BACKEND_URL", "http://localhost:8000")`, and Streamlit Cloud
+automatically injects values from the Secrets panel as environment variables.
+
+
 
 - Swap the curated skills bank for a proper skill-extraction model (e.g. spaCy NER)
 - Add SHAP-style explanations for *why* the semantic score landed where it did
