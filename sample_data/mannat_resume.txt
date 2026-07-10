@@ -1,0 +1,41 @@
+MANNATPREET KAUR BHATIA
+Delhi
+
+ABOUT ME
+B.Tech Information Technology student (2023-2027) with a strong focus on Data Analytics and Machine Learning. Skilled in transforming raw datasets into actionable insights using structured analytical workflows. Seeking internship opportunities to apply analytical, programming, and problem-solving skills in real-world data-driven environments.
+
+EDUCATION
+Maharaja Agrasen Institute of Technology, B.Tech in IT, 2023-2027
+Bharti Public School, 2021-2023
+
+SKILLS
+Programming: Python, C++
+Database & Data Tools: SQL, Excel
+Libraries & Concepts: Data Structures & Algorithms, OOP, Basic Machine Learning, Data Cleaning
+Development Tools: Git, VS Code
+Core Concepts: Networking Fundamentals, Problem Solving, Debugging
+
+CERTIFICATION
+Google Data Analytics Professional Certificate - Coursera
+Google Cybersecurity Professional Certificate - Coursera
+IBM SkillsBuild Certifications - Data & Professional Skills Programs
+McKinsey Forward Program - McKinsey & Company
+
+PROJECTS
+EMPLOYEE SALARY PREDICTION (MACHINE LEARNING PROJECT)
+Collected and consolidated synthetic employee datasets from open repositories into a unified dataset of 6,704 records.
+Performed data cleaning, missing value treatment, and outlier detection using Pandas and NumPy.
+Implemented and compared Linear Regression, Decision Tree, and Random Forest models.
+Evaluated models using MAE, MSE, and R2 metrics with train-test split validation.
+Achieved best performance with Random Forest (R2 approx 0.89), outperforming Decision Tree (0.78) and Linear Regression (0.62)
+
+MINI CHAT APPLICATION (C++ | SOCKET PROGRAMMING)
+Developed a local client-server chat application using C++ and socket programming.
+Implemented real-time two-way communication within a local network.
+Applied networking concepts including buffer handling and message transmission protocols.
+
+WORK EXPERIENCE
+INFOSYS VIRTUAL INTERNSHIP
+Completed structured virtual internship focused on programming fundamentals and problem-solving.
+Worked on Development of AI-Driven for Oil Spill Identification and Monitoring.
+Strengthened technical documentation and development practices.

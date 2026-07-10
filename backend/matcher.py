@@ -81,8 +81,14 @@ SKILLS_BANK = [
     "excel", "tableau", "power bi", "looker",
     "aws", "gcp", "azure", "docker", "kubernetes",
     "spark", "hadoop", "airflow", "etl",
-    "regression", "classification", "clustering", "a/b testing",
-    "git", "linux", "fastapi", "flask", "django",
+    "regression", "linear regression", "logistic regression",
+    "classification", "clustering", "a/b testing",
+    "decision tree", "random forest", "gradient boosting", "xgboost",
+    "data structures", "algorithms", "data structures & algorithms",
+    "oop", "object-oriented programming",
+    "data cleaning", "outlier detection", "feature engineering",
+    "networking", "socket programming", "cybersecurity",
+    "git", "linux", "fastapi", "flask", "django", "vs code",
     "communication", "leadership", "project management", "stakeholder management",
 ]
 

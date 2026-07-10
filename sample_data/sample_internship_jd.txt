@@ -1,0 +1,22 @@
+Data Analytics / Machine Learning Intern
+
+We're looking for a motivated student intern to support our analytics team.
+
+Responsibilities:
+- Assist in cleaning, processing, and analyzing structured datasets
+- Build and evaluate machine learning models (regression, classification, tree-based models)
+- Support experimentation and reporting on model performance
+- Document findings and communicate results to the team
+
+Requirements:
+- Currently pursuing a degree in Computer Science, IT, or related field
+- Strong foundation in Python and SQL
+- Familiarity with pandas, numpy, and basic machine learning concepts
+- Understanding of data structures and algorithms
+- Strong problem-solving and communication skills
+- Experience with Git and version control
+
+Nice to have:
+- Exposure to data visualization tools (Excel, Tableau, Power BI)
+- Familiarity with cloud platforms (AWS, GCP, or Azure)
+- Coursework or certifications in data analytics
